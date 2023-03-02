@@ -1,0 +1,23 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "modulePathIgnorePatterns": ["build"],
+  "rootDir": ".",
+  "transform": {
+    "^.+\\.ts$": [
+      "ts-jest", 
+      {
+        "tsconfig": "tsconfig.json",
+        "packageJson": "package.json",
+        "isolatedModules": true
+      }
+    ]
+  },
+  "reporters": [
+    "jest-fixed-default-reporter/DefaultReporter",
+    "jest-fixed-default-reporter/SummaryReporter"
+  ],
+  "testEnvironment": "node",
+  "watchPathIgnorePatterns": [".*node_modules.*"],
+  "testTimeout": 60000,
+  "resetMocks": true
+}
