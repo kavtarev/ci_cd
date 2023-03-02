@@ -12,8 +12,7 @@ export class App {
 
     this.server.listen(3000);
 
-    this.server.on('close', (data: any) => {
-      console.log(666, data);
+    this.server.on('close', () => {
     });
   }
 
