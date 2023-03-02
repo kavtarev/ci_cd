@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "node --expose-gc --no-compilation-cache ./node_modules/jest/bin/jest.js --testRegex=\\.e2e\\.ts$ --detectOpenHandles  --maxWorkers=4 --logHeapUsage --no-cache --forceExit"
+    "test": "jest",
+    "test:e2e": "node --expose-gc --no-compilation-cache ./node_modules/jest/bin/jest.js --testRegex=\\.e2e\\.ts$ --detectOpenHandles  --maxWorkers=4 --logHeapUsage --no-cache --forceExit"
   },
   "keywords": [],
   "author": "",
