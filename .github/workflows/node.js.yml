@@ -10,6 +10,7 @@ on:
     branches: [ "main" ]
 
 jobs:
+  # name of a job
   build:
 
     runs-on: ubuntu-latest
@@ -32,3 +33,4 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     - run: npm run test:e2e
+    - run: npx eslint e2e/** 
